@@ -9,12 +9,8 @@ function mondayWork(activity='go to the office') {
 
 function wrapAdjective(wrap) {
     if (wrap === '*') {
-        return (adj="a hard worker") => {
-            return `You are ${wrap}${adj}${wrap}!`
-        }
+        return (adj="a hard worker") =>`You are ${wrap}${adj}${wrap}!`
     } else if (wrap === '||') {
-        return (adj="a dedicated programmer") => {
-            return `You are ${wrap}${adj}${wrap}!`
-        }
+        return (adj="a dedicated programmer") => `You are ${wrap}${adj}${wrap}!`
     }
 }
